@@ -1,0 +1,21 @@
+.header {
+    background: $off-black;
+    color: $off-white;
+    margin-bottom: $xl-size;
+    padding: $m-size 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: $l-size;
+    margin: 0;
+    padding: $s-size; 
+}
+
+.logo {
+    width: 15rem;
+    height: $xl-size;
+    padding-right: $s-size;
+    margin-top: 10px;
+}

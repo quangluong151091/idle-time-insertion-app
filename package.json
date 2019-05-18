@@ -1,0 +1,57 @@
+{
+   "name": "idle-time-insertion",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+      "@progress/kendo-react-buttons": "^2.3.2",
+      "babel-cli": "6.24.1",
+      "babel-plugin-transform-class-properties": "6.24.1",
+      "babel-preset-env": "1.5.2",
+      "bootstrap": "^4.1.3",
+      "file-loader": "^2.0.0",
+      "firebase": "^5.5.9",
+      "live-server": "^1.2.0",
+      "node-sass": "^4.10.0",
+      "normalize.css": "7.0.0",
+      "react": "^16.6.3",
+      "react-bootstrap": "^0.32.4",
+      "react-datepicker": "^2.0.0",
+      "react-dom": "^16.6.1",
+      "react-modal": "2.2.2",
+      "react-redux": "^5.1.0",
+      "react-router-dom": "^4.3.1",
+      "react-scripts": "2.1.1",
+      "react-svg": "^7.2.0",
+      "redux": "^4.0.1",
+      "redux-promise": "^0.6.0",
+      "redux-thunk": "^2.3.0",
+      "validator": "8.0.0"
+   },
+   "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+   },
+   "eslintConfig": {
+      "extends": "react-app"
+   },
+   "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+   ],
+   "devDependencies": {
+      "babel-core": "^7.0.0-bridge.0",
+      "enzyme": "^3.8.0",
+      "enzyme-adapter-react-16": "^1.7.1",
+      "enzyme-to-json": "^3.3.5",
+      "react-test-renderer": "^16.6.3"
+   },
+   "jest": {
+      "snapshotSerializers": [
+         "enzyme-to-json/serializer"
+      ]
+   }
+}

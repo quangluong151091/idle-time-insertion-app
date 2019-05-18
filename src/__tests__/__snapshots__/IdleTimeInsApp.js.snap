@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IdleTimeInsApp should render correctly 1`] = `
+<div>
+  <Header />
+  <SearchBar
+    searchBoxName="userNameSearch"
+  />
+  <BrowserRouter>
+    <AppRouter />
+  </BrowserRouter>
+</div>
+`;

@@ -1,0 +1,20 @@
+<svg 
+	viewBox="0 0 1504.7 752"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+	<filter id="filter">
+		<feComponentTransfer color-interpolation-filters="sRGB">
+			<feFuncR type="linear" slope="0.5" />
+			<feFuncG type="linear" slope="0.5" />
+			<feFuncB type="linear" slope="0.5" />
+		</feComponentTransfer>
+		<feColorMatrix type="matrix" color-interpolation-filters="sRGB" 
+			values="0.393 0.769 0.189 0 0 0.349 0.686 0.168 0 0 0.272 0.534 0.131 0 0 0 0 0 1 0" />
+		<feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="140" />
+		<feColorMatrix type="matrix" color-interpolation-filters="sRGB" 
+			values="4.9350000000000005 -3.575 -0.35999999999999993 0 0 -1.065 2.485 -0.35999999999999993 0 0 -1.065 -3.575 5.640000000000001 0 0 0 0 0 1 0" />
+	</filter>
+	<image id="29484002" class="dropzone" width="3108" height="1548" xlink:href="pics/parts/29484002_P2.png" transform="matrix(0.4841 0 0 0.4858 0 0)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1446" height="787" xlink:href="pics/parts/29484002_P1.png" transform="matrix(0.5078 0 0 0.5585 14 164.3269)"></image>
+</svg>

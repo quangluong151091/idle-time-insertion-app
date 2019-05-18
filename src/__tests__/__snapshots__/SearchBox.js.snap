@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox should render correctly 1`] = `
+<div
+  class="search-box"
+>
+  <input
+    class="search-txt"
+    id="search"
+    placeholder="Search..."
+    type="text"
+    value=""
+  />
+  <a
+    class="search-btn"
+    href="#searchbox"
+  >
+    <i
+      class="fas fa-search"
+    />
+  </a>
+  <div
+    class="search-result"
+    hidden=""
+    id="searchlist"
+  >
+    <ul />
+  </div>
+</div>
+`;

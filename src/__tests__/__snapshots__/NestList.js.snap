@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NestList should render correctly 1`] = `
+<div>
+  <h1
+    className="List__title"
+  >
+    Nest List
+  </h1>
+  <table
+    id="table-Nest"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <tbody>
+      <tr
+        className="tblHead"
+      >
+        <th
+          className="imgNest"
+        >
+          Nest
+        </th>
+        <th
+          className="nameNest"
+        >
+          Name
+        </th>
+        <th
+          className="noteNest"
+        >
+          Note
+        </th>
+        <th
+          className="sttNest"
+        >
+          Status
+        </th>
+      </tr>
+      <_default>
+        <withRouter(Connect(Nest))
+          details="Nest 1"
+          img="/pics/nest/29484001PO.png"
+          name="29484001"
+        />
+      </_default>
+      <_default>
+        <withRouter(Connect(Nest))
+          details="Nest 2"
+          img="/pics/nest/29484002PO.png"
+          name="29484002"
+        />
+      </_default>
+    </tbody>
+  </table>
+</div>
+`;

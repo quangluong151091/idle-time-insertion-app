@@ -1,0 +1,131 @@
+.back-button {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    background-color: #353b48;
+    color: #fff;
+    border: none;
+    border-radius: 50% 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*3-column page layout*/
+.users {
+    table-layout: fixed;
+    width: 100%;
+    white-space: normal;
+    height: 100vh;
+}
+
+.users td {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: inherit;
+}
+/* Column widths are based on these cells */
+.side {
+    width: 20%;
+    padding: 5px;
+    vertical-align: top;
+    text-align: left;
+    background-color: #eee;
+}
+
+.main {
+    width: 60%;
+    padding: 10px;
+    vertical-align: top;
+    text-align: justify;
+}
+table#sticker_list {
+    border-collapse: collapse;
+}
+table#sticker_list img {
+    width: 50%;
+}
+table#sticker_list span {
+    font-size: small;
+}
+.centering {
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+h5 {
+    color: #444;
+}
+
+.Date {
+    font-size: 18pt;
+    font-style: italic;
+}
+
+.title_note {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+li:nth-child(odd):before {
+    clear: both;
+    content: "\25BE";
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;        
+    position: relative;
+}
+li:nth-child(even) {
+    padding: 10px 0;
+    margin-left: -20px;
+}
+.image-Nest {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70rem;
+    border-image-width: 2px;
+}
+
+.part_sticker {
+    width: 25%;
+    float: left;
+    padding-bottom: 10px;
+    
+}
+.part_note {
+    font-size: small;
+}
+
+#timeline {
+    clear: both;
+    padding: 30px 0px;
+    content: "";
+}
+.dropzone {
+    border: dashed 4px transparent;
+    border-radius: 4px;
+    margin: 10px auto 30px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .drop-target {
+    border-color: #fff;
+    border-style: solid;
+    filter:url("#filter");
+  }
+  
+  

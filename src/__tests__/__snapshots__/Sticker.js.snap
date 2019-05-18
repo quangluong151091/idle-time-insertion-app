@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sticker should render correctly 1`] = `
+<td
+  style={
+    Object {
+      "width": "50%",
+    }
+  }
+>
+  <img
+    alt="Tool"
+    className="item"
+    draggable={true}
+    onDragStart={[Function]}
+    src="/pics/stickers/ic-icon.png"
+  />
+  <br />
+  <span>
+    TOOL
+  </span>
+</td>
+`;

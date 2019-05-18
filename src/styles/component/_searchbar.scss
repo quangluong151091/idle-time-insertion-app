@@ -1,0 +1,82 @@
+.search-box{
+    position: absolute;
+    right: 20px;
+    background-color: #353b48;
+    height: 60px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search-txt{
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    padding: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    width: 0px;
+}
+
+.search-box:hover > .search-txt{
+    padding: 0 10px;
+    width: 450px;
+    transition: width 0.4s linear;
+}
+
+.search-box:hover .search-result {
+    padding: 20px;
+    width: 450px;
+    transition: width 0.4s linear;
+    display: block;
+}
+
+.search-box:hover > .search-btn{
+    background: white;
+    color: #e74c3c;
+}
+
+.search-btn{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    background-color: #353b48;
+    transition: 0.4s;
+    font-size: 2rem;
+}
+.search-result {
+    background-color: #353b48;
+    color: white;
+    margin-top:30px;
+    width: 0px;
+    transition: width 0.4s linear;
+    border-radius: 0 0 30px 30px;
+}
+.search-box > a,
+.search-result>ul>a {
+    text-decoration: none;
+    color: white;
+}
+.search-result ul li {
+    margin: 0;
+    padding-left: 10px;
+}
+.search-result>ul>a>li:before {
+    content: none;
+}
+.search-result>ul>a>li:hover {
+    background-color: #D0EDFF;
+    color: #353b48;
+}
+.text-list {
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}

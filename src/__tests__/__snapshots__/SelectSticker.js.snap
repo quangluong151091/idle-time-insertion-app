@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectSticker should render correctly 1`] = `
+<select
+  hidden={true}
+  id="stickerSelected"
+  name="stickerSelected"
+>
+  <option
+    hidden={true}
+    value=""
+  >
+    Select a sticker to add
+  </option>
+  <optgroup
+    label="MAINTENANCE"
+  >
+    <option
+      label="End User"
+      value="enduser"
+    >
+      End User
+    </option>
+    <option
+      label="Prima Power"
+      value="primapower"
+    >
+      Prima Power
+    </option>
+  </optgroup>
+  <optgroup
+    label="SETUP"
+  >
+    <option
+      label="Material"
+      value="material"
+    >
+      Material
+    </option>
+    <option
+      label="Tool"
+      value="tool"
+    >
+      Tool
+    </option>
+  </optgroup>
+  <optgroup
+    label="FAILURE"
+  >
+    <option
+      label="Operation"
+      value="ic-icon"
+    >
+      Operation
+    </option>
+    <option
+      label="Tool"
+      value="ic-icon"
+    >
+      Tool
+    </option>
+    <option
+      label="Material"
+      value="ic-icon"
+    >
+      Material
+    </option>
+    <option
+      label="Production Order"
+      value="ic-icon"
+    >
+      Production Order
+    </option>
+    <option
+      label="Program"
+      value="ic-icon"
+    >
+      Program
+    </option>
+  </optgroup>
+  <optgroup
+    label="Other"
+  >
+    <option
+      label="Other"
+      value="ic-icon"
+    >
+      Other
+    </option>
+  </optgroup>
+</select>
+`;

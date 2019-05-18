@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NestDetails should render correctly 1`] = `
+<div
+  className="content"
+>
+  <button
+    className="back-button"
+    onClick={[Function]}
+  >
+    <i
+      className="fas fa-home"
+    />
+  </button>
+  <table
+    className="users"
+  >
+    <tbody>
+      <tr>
+        <Stickers />
+        <NestStatus
+          name="29484001"
+        />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

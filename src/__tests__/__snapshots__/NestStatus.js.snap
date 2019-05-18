@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NestStatus should render correctly 1`] = `
+<td
+  className="main"
+>
+  <h1 />
+  <br />
+  <div
+    style={
+      Object {
+        "float": "left",
+        "paddingBottom": "10px",
+        "width": "95%",
+      }
+    }
+  >
+    <ReactSVG
+      evalScripts="always"
+      fallback={[Function]}
+      loading={[Function]}
+      onDragLeave={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
+      onInjected={[Function]}
+      renumerateIRIElements={true}
+      src="undefined.svg"
+      svgClassName={null}
+      svgStyle={Object {}}
+      wrapper="div"
+    />
+  </div>
+  <div
+    id="timeline"
+    style={
+      Object {
+        "clear": "both",
+        "paddingTop": "20px",
+      }
+    }
+  >
+    <_default>
+      <Connect(timelineLayout) />
+    </_default>
+  </div>
+  <DragDropModal
+    closeModal={[Function]}
+    item={null}
+    part={null}
+    show={false}
+  />
+</td>
+`;

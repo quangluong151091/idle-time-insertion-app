@@ -1,0 +1,999 @@
+#timeline1{
+	position:relative;
+	top:-4px;
+	z-index:3;
+	height:200px;
+}
+#timeline3{
+	display:block;
+	position:relative;
+   z-index:2;
+}
+#timeline2{
+	position:relative;
+	height:250px;
+	top:-200px;
+	display:block;
+
+}
+#timelinesDIV{
+	display:block;
+	position:relative;
+	top:0px;
+	z-index:1;
+	height:250px;
+	overflow:hidden;
+}
+.timelineContainer{
+	display:block;
+	position:relative;
+	top:0px;
+	z-index:1;
+	height:200px;
+	overflow:hidden;
+}
+/* ajax loader*/
+.loadingOverlay {
+	display:    none;
+	position:   fixed;
+	z-index:    1000;
+	top:        0;
+	left:       0;
+	height:     100%;
+	width:      100%;
+	background: rgba( 255, 255, 255, .8 ) 
+				//url('../img/ajax-loader1.GIF') 
+				50% 50%
+				no-repeat;
+}
+/*custom check boxes*/
+#targetLines{display: none}
+.options {
+	display:inline-block;
+
+}
+
+/*.check_box {
+	display:none;
+	margin-right:10px;
+}
+
+#chB1 + label{
+	background:url('../img/AlarmsIconNewFade.png') no-repeat;
+	height: 50px;
+	width: 81px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	
+}
+
+#chB1:checked + label{
+	background:url('../img/AlarmsIconNew.png') no-repeat;
+	height: 50px;
+	width: 81px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+   
+}
+#chB2 + label{
+	background:url('../img/TriggersIconFade.png') no-repeat;
+	height: 50px;
+	width: 81px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+
+#chB2:checked + label {
+	background: url('../img/TriggersIcon.png') no-repeat;
+	height: 50px;
+	width: 81px;
+	display: inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+#chB3 + label{
+	background:url('../img/genericfade.png') no-repeat;
+	height: 50px;
+	width: 84px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+
+#chB3:checked + label{
+	background:url('../img/generic.png') no-repeat;
+	height: 50px;
+	width: 84px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+#chB4 + label{
+	background:url('../img/ServiceCallsIconFade.png') no-repeat;
+	height: 50px;
+	width: 81px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+
+#chB4:checked + label{
+	background:url('../img/ServiceCallsIcon.png') no-repeat;
+	height: 50px;
+	width: 81px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+#chB5 + label{
+	background:url('../img/ServiceReportsIconFade.png') no-repeat;
+	height: 50px;
+	width: 101px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+
+#chB5:checked + label{
+	background:url('../img/ServiceReportsIcon.png') no-repeat;
+	height: 50px;
+	width: 101px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+#chB6 + label{
+	background:url('../img/ManualOpsIconFade.png') no-repeat;
+	height: 50px;
+	width: 81px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}
+
+#chB6:checked + label{
+	background:url('../img/ManualOpsIcon.png') no-repeat;
+	height: 50px;
+	width: 81px;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	margin-right:10px;
+}*/
+/* for date fields in testing phase*/
+#dateRange{
+	padding:3px;
+
+}
+#DateSelectionDiv{
+	padding:3px;
+
+}
+#btnQueryString{
+	background-color:#878585;
+	font-size:14px;
+	height:26px;
+	color:#fff;
+	text-decoration:none;
+	border:none;
+} 
+
+button:focus {outline:none!important;}
+
+/* bootstrap modal custom css*/
+#modal-wide{
+	width:1000px;
+	font-size:12px;
+
+}
+
+/* chap links timeline css starts here*/
+div.timeline-frame {
+	-moz-box-sizing: border-box;
+	border: 1px solid #bebebe;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+
+div.timeline-content {
+	overflow: hidden;
+	position: relative;
+}
+
+div.timeline-axis {
+	-moz-box-sizing: border-box;
+	border-color: #4d4d4d;
+	border-top-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+}
+
+div.timeline-axis-grid {
+	-moz-box-sizing: border-box;
+	border-left-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+}
+
+div.timeline-axis-grid-minor {
+	border-color: #bebebe;
+	width:2px;
+	border:1px solid #ccc;
+}
+
+div.timeline-axis-grid-major {
+	border-color: #4d4d4d;
+}
+
+div.timeline-axis-text {
+	color: #4d4d4d;
+	padding: 3px;
+	white-space: nowrap;
+}
+
+div.timeline-event {  margin: 0px;padding:0px;
+
+	background-color: #CFE3FA;
+	font-size:11px;
+	border-color: #4b03ff;
+	/*box-sizing: border-box;*/
+	color: #1a1a1a;
+	display: inline-block;
+}
+
+div.timeline-event-selected {
+	background-color: #fff785;
+	border-color: #ffc200;
+	z-index: 999;
+}
+
+/* TODO: use another color or pattern? */
+
+
+div.timeline-event-cluster div.timeline-event-dot {
+	border-color: #d5ddf6;
+    border:none;
+}
+
+div.timeline-event-box {
+	-moz-border-radius: 5px; /* For Firefox 3.6 and older */
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+}
+
+div.timeline-event-dot {
+	-moz-border-radius: 0px; /* For Firefox 3.6 and older */
+	border-radius: 0px;
+	border-style: solid;
+	border-width: 0px;
+}
+div.timeline-event-cluster {
+	background: rgba(0, 0, 0, 0.0) ;
+	color: #000;
+	border-color:rgba(0, 0, 0, 0.0) ;
+
+	border:none;
+}
+div.timeline-event-range.Failure {
+    background-color: rgba(255, 0, 0, 0.2);
+   border:none;
+   
+}
+div.timeline-event-range.Working {
+    background-color: rgba(0, 255, 79, 0.3);
+    border:none;
+ }
+div.timeline-event-range.Idle {
+    background-color: rgb(255, 248, 146);
+    border:none;
+}
+div.timeline-event-range.stateFailure1 {
+	background-color: rgba(255, 0, 0, 0.2);
+	height:18px;/*height is our estimated maximum height of timeline,note this should match the height in the options for createTimeline2(); #timeline2 should have position top of the this value plus 56px. the 56px assures the timeline starts above timeline1's axis and they align as we want. so if the height of this ID is 947px then the top position of timline2 should be -1003px*/
+	border:none;
+   
+}
+div.timeline-event-range.stateWorking1 {
+	background-color: rgba(0, 255, 79, 0.3);
+	height:18px;
+	border:none;
+ }
+div.timeline-event-range.stateIdle1 {
+	background-color: #fff093;
+	height:18px;
+	border:none;
+}
+div.timeline-event-range.stateFailure {
+	background-color: rgba(255, 0, 0, 0.2);
+	height:947px;/*height is our estimated maximum height of timeline,note this should match the height in the options for createTimeline2(); #timeline2 should have position top of the this value plus 56px. the 56px assures the timeline starts above timeline1's axis and they align as we want. so if the height of this ID is 947px then the top position of timline2 should be -1003px*/
+	border:none;
+   
+}
+div.timeline-event-range.stateWorking {
+	background-color: rgba(0, 255, 79, 0.3);
+	height:947px;
+	border:none;
+ }
+div.timeline-event-range.stateIdle {
+	background-color: #fff093;
+	height:947px;
+	border:none;
+}
+div.timeline-event-range-drag-left {
+	cursor: w-resize;
+	z-index: 1000;
+}
+
+div.timeline-event-range-drag-right {
+	cursor: e-resize;
+	z-index: 1000;
+}
+
+div.timeline-event-line {
+	-moz-box-sizing: border-box;
+	border-left-style: solid;
+	border-left-width: 1px;
+	box-sizing: border-box;
+}
+div.videoClass{
+	min-width:26px;
+		-moz-border-radius: 3px; /* For Firefox 3.6 and older */
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:blue;
+
+
+}
+div.videoStored{
+    min-width:26px;
+		-moz-border-radius: 3px; /* For Firefox 3.6 and older */
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+    border-color:green;
+    background-color:#02d17a;
+}
+div.timeline-event-content {
+	margin: 3px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+	
+div.timeline-groups-axis {
+
+	-moz-box-sizing: border-box;
+	border-color: #bebebe;
+	background-color:#fff;
+	border-width: 1px;
+	box-sizing: border-box;
+}
+
+div.timeline-groups-axis-onleft {
+	border-style: none solid none none;
+}
+
+div.timeline-groups-axis-onright {
+	border-style: none none none solid;
+}
+
+div.timeline-groups-text {
+	font-weight:bold;
+	font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+	color: #525252;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.timeline-currenttime {
+	-moz-box-sizing: border-box;
+	background-color: #ff7f6e;
+	box-sizing: border-box;
+	width: 2px;
+}
+div.timeline-arrowtime {
+	-moz-box-sizing: border-box;
+	//background-image: url("../img/arrowTime.png");
+	box-sizing: border-box;
+	cursor: zoom-in;
+	width: 27px;
+}
+div.timeline-customtime {
+	-moz-box-sizing: border-box;
+	background-color: red;
+	box-sizing: border-box;
+	cursor: move;
+	width: 3px;
+}
+
+div.timeline-navigation {
+	-moz-border-radius: 2px; /* For Firefox 3.6 and older */
+	-moz-box-sizing: border-box;
+	background-color: #f5f5f5;
+	border: 1px solid #bebebe;
+	border-radius: 2px;
+	box-sizing: border-box;
+	color: #808080;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div.timeline-navigation-new,
+div.timeline-navigation-delete,
+div.timeline-navigation-zoom-in,
+div.timeline-navigation-zoom-out,
+div.timeline-navigation-move-left,
+div.timeline-navigation-move-right {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+	float: left;
+	height: 36px;
+	padding: 10px;
+	text-decoration: none;
+	width: 36px;
+}
+
+/*div.timeline-navigation-new {
+	background: url('img/16/new.png') no-repeat center;
+}
+*/
+/* separator between new and navigation buttons */
+div.timeline-navigation-new-line {
+	border-right: 1px solid #bebebe;
+}
+
+/*div.timeline-navigation-delete {
+	background: url('img/16/delete.png') no-repeat center;
+}
+*/
+/*div.timeline-navigation-zoom-in {
+	background: url('img/16/zoomin.png') no-repeat center;
+}
+
+div.timeline-navigation-zoom-out {
+	background: url('img/16/zoomout.png') no-repeat center;
+}
+
+div.timeline-navigation-move-left {
+	background: url('img/16/moveleft.png') no-repeat center;
+}
+
+div.timeline-navigation-move-right {
+	background: url('img/16/moveright.png') no-repeat center;
+}
+*/
+
+.options label{padding-right:15px;}
+.genTable table{
+	margin-left:10px;
+	margin-right:10px;
+	border-collapse: collapse;
+	font-size:9px
+}
+.genTable tr{
+border-bottom:1px solid #fff;}
+.noState{
+	width:1px;border-right:1px solid #fff;
+background-color: #fff;
+}
+.Working{width:1px;border-right:1px solid #fff;
+background-color: #D0F79C;}
+.Failure{width:1px;border-right:1px solid #fff;
+background-color: #FFBABF;}
+.Idle{width:1px;border-right:1px solid #fff;
+background-color: #fff093;}
+
+.stateIdlestateWorking{width:1px;border-right:1px solid #fff;
+background: linear-gradient(90deg, #ccc 50%, #D0F79C 50%);}
+.stateIdlestateFailure{width:1px;border-right:1px solid #fff;
+background: linear-gradient(90deg, #ccc 50%, #FFBABF 50%);}
+
+.stateWorkingstateIdle{width:1px;border-right:1px solid #fff;
+background: linear-gradient(90deg, #D0F79C 50%, #ccc 50%);}
+.stateWorkingstateFailure{width:1px;border-right:1px solid #fff;
+background: linear-gradient(90deg, #D0F79C 50%, #FFBABF 50%)}   
+
+.stateFailurestateWorking{width:1px;border-right:1px solid #fff;
+background: linear-gradient(90deg, #FFBABF 50%, #D0F79C 50%)}
+.stateFailurestateIdle{width:1px;border-right:1px solid #fff;
+	background: linear-gradient(90deg, #FFBABF 50%, #ccc 50%);}
+
+.genTable td{
+	padding:5px;
+}
+.modal {
+	margin-top:0px;
+	border: 0px solid #CCC;
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0px 0px #CCC;
+	border-radius: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	box-shadow: 0px 0px 0px #888;
+	width:auto;
+	color:#707273
+}
+.loadingOverlay {
+	display:    none;
+	position:   fixed;
+	z-index:    1000;
+	top:        0;
+	left:       0;
+	height:     100%;
+	width:      100%;
+	background: rgba( 255, 255, 255, .8 ) 
+				//url('../img/ajax-loader1.GIF') 
+				50% 25%
+				no-repeat;
+}
+
+ul li {
+	list-style:none;
+}
+#barchartIcon{
+	width:50px;
+	height:25px;
+	   
+}
+#barchartIconCon{
+	display:inline-block;
+	  
+ 
+}
+#acceptionLink a{
+	color:#fff;
+}
+#VideoConnDiv{
+	display:inline-block;
+}
+#alarmFilterContainer{
+	display:block;
+}
+.optionsLabel{
+	padding-right:15px;
+}
+
+.optionsDiv img{
+	width:14px;
+	height:14px;
+}
+.optionsDiv input{
+	display:none;
+}
+
+
+
+#alarmFilterInfo{
+	display:inline-block;
+	padding:5px;
+	font-size:13px;
+}
+#alarmFilter{
+	width:175px;
+	margin-left:10px;
+}
+#showblacklist{
+	 font-weight: normal !important;
+	 display:inline-block;
+}
+#blacklistLink{
+	color:blue;
+	cursor:pointer;
+}
+#tables{
+	position:relative;
+}
+#tableRangeOptionsDiv{
+	display:block;
+	margin-left:10px;
+	margin-top:5px;
+}
+#tableRangeOptionsDiv p {
+	display:inline-block;
+}
+#tableRangeOptions , #orderFrequencyBy {
+	 display:inline-block;
+	 margin-left:20px;
+}
+#orderFrequencyBy{
+    padding:10px;
+}
+#timelinesDIV{
+	overflow:hidden;
+	margin-top:5px;
+}
+
+#timelineOptions{
+	display:block;
+}
+.timelineWidget{
+	
+	border:solid 2px #bbb;
+	margin-left:3px;
+	margin-bottom:3px;
+	float:left;
+	border-radius: 3px;
+	position: relative;
+	min-height: 50px;
+	
+}
+.timelineWidgetHeader{
+	border-bottom:solid 2px #bbb;
+	height:30px;
+	padding:5px;
+	background-color:#f5f5f5;
+	width:100%;
+	display:inline-block;
+	position:relative;
+	cursor:pointer;
+   
+}
+.resizable {
+	position: relative;
+	min-height: 50px;
+}
+
+.ui-resizable-handle {
+	width: 2px;
+	height: 100%;
+	background-color: #bbb;
+	position: absolute;
+	z-index:1;
+}
+
+
+.ui-resizable-e {
+	right:-2px;
+	top:0px;
+	cursor: e-resize;
+}
+.tables-sortable{
+	display:block;
+	margin-top:3px;
+}
+
+
+
+.minMax{
+	 position:absolute;
+	 right:25px;
+	 top:5px;
+}
+.minMax div{
+		width: 20px;
+	height: 20px;
+   //background-image: url(../img/minMax.png);
+   background-position: 20px 0;
+   position:absolute;
+
+}
+#alarmDiv, #triggerDiv , #countsDiv, #manOpsDiv, .workDoneDiv{
+	max-height:650px;
+	width:100%;
+	min-width:100px;
+	overflow:auto;
+	margin-top:5px;
+}
+/*#triggerDiv{
+	  width:390px;
+}
+#alarmDiv{
+	  width:650px;
+}
+#countsDiv{
+	 width:390px;
+}
+#manOpsDiv{
+	width:260px;
+ 
+}*/
+#alarmDivTable, #triggerDivTable,#manOpsDivTable,#countsDivTable, .workdDoneDivTable { max-height:600px; }
+#alarmWidget {
+	min-width:80px;
+	max-width:650px;
+	display:block;
+}
+#manOpsWidget{
+	min-width:155px;
+	max-width:260px;
+	display:block;
+}
+#triggerWidget{
+	max-width:390px;
+	min-width:90px;
+	display:block;
+}
+#countsWidget {
+	min-width:120px;
+	max-width:390px;
+	display:block;
+}
+.workDoneWidget{
+   min-width:180px;
+   max-width:520px;
+}
+runToFailWidget{
+   min-width:400px;
+   max-width:520px;
+}
+.widgetContent{
+	position:relative;
+   
+}
+.controlsWidget{
+	width:300px;
+	position:absolute;
+	top:5px;
+	left:5px;
+}
+.videoWidget{
+	 position:absolute;
+	 width:450px;
+}
+#video1Con{
+	top:5px;
+	left:350px;
+	
+}
+#video2Con{
+	top:5px;
+	left:800px;
+}
+#video3Con{
+	top:260px;
+	left:350px;
+}
+#video4Con{
+	top:260px;
+	left:800px;
+}
+ul.tab {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 5px ;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 14px;
+	border:1px solid #8A8A8A;
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+	margin-right:1px;
+	margin-left:1px;
+   
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+	background-color: #eee;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: block;
+	margin-left:4px;
+   
+}
+#dashboardContent{
+	position:relative;
+	top:-1px;
+	z-index:1;
+	height:1500px;
+}
+#dashboardTabs{
+	 z-index:2;
+	
+	position:relative;
+}
+#dashboard{
+	 position:relative;
+	 margin-top:15px;
+	 background-color: #f9fafb;
+}
+#pageLoader{
+	display:block;
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:150px;
+}
+#pageContent{
+	display:block
+	
+}
+.btn{
+	padding:1px;
+}
+
+#configDiv{
+	display:none;
+	border-bottom:1px solid #ccc;
+	
+}
+.configOption{
+	margin:5px;
+}
+.configLabel{
+	display:inline-block;
+	width:150px;
+	font-weight:bold;
+	
+}
+#menuIcon{
+	 border-bottom:1px solid #ccc;
+	 display:block;
+}
+.deviceOption{
+	margin-left:4px;
+}
+#VideoConnDiv{
+	display:none;
+}
+.loaders{
+	display:inline-block;
+}
+.loaders img{
+	width:14px;
+	height:14px;
+}
+#tableLoader{
+	display:none;
+}
+#tableLoader {display:none;
+	z-index:10000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;background-color:rgba(0, 0, 0, 0.2);
+}
+
+#tableLoader div{
+	background-color:#fff;
+	padding:20px;
+	border-radius:5px;
+	 position: absolute;
+	top: 100px;
+	left: 50%;
+	margin: -2px;
+}
+#errorDiv{display:none}
+#dataTables{display:block;}
+#refreshButton{display:block;}
+#tableLoaderSmall{
+	display:none;
+	margin-left:100px;
+	font-weight:bold;
+}
+
+
+#videoMenu{
+	width:350px;
+	display:inline-block
+}
+#videoMainScreen{
+	display:inline-block;
+}
+#resetVideoDisplay{
+	display:inline-block;
+	vertical-align:top;
+	padding:10px;
+	padding-left:0px;
+}
+#videoPlayToggle{
+	display:inline-block;
+	padding:10px;
+}
+#videoPlayerCon{
+	position:relative;
+}
+#videoPlayToggle{
+	cursor:pointer;
+}
+#resetVideoDisplay{
+	cursor:pointer;
+}
+#playIcon{
+	display:block;
+}
+#pauseIcon{
+	display:none;
+}
+#scrubBar{
+	position:relative;
+	height:20px;
+	margin-bottom:2px;
+}
+#bufferViewer{
+	position:absolute;
+	left: 10px;
+	top:0px;
+	z-index:0;
+}
+#scrub{
+	position:absolute;
+	width:270px;
+	left: 10px;
+	top:-4px;
+	z-index:1;
+}
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+#workDoneIconCon{
+	display:inline-block;
+	  
+ 
+}
+#workDoneButton{
+	margin-left:20px;
+}
+.workDoneDivTable td{
+	padding:4px 7px;
+	font-size:11px;
+}
+
+.workDoneDivTable th{
+	font-size:13px;
+	font-weight:bold;
+	padding:4px 7px; 
+}
+.leftTen{
+    margin-left:10px;
+}
+#refreshTimelineButton{
+    display:inline-block;
+    margin-right:25px;
+    margin-top:5px;
+}
+.noBorder {
+	border:none;
+}
+
+.cw-modal-text-area{
+    box-sizing: border-box;
+    width:95%;
+    height:100px;
+	margin:15px;
+	resize: none;
+}
+
+#stickerSelected {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 200px;
+} 

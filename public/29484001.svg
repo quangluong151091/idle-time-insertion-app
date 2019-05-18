@@ -1,0 +1,53 @@
+<svg id="29484001"
+	class="dropzone"
+	viewBox="0 0 4330.6 2047"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"	
+>
+	<filter id="filter">
+		<feComponentTransfer color-interpolation-filters="sRGB">
+			<feFuncR type="table" tableValues="0.5 0.5" />
+			<feFuncG type="table" tableValues="0.5 0.5" />
+			<feFuncB type="table" tableValues="0.5 0.5" />
+		</feComponentTransfer>
+		<feColorMatrix type="matrix" color-interpolation-filters="sRGB" 
+			values="0.393 0.769 0.189 0 0 0.349 0.686 0.168 0 0 0.272 0.534 0.131 0 0 0 0 0 1 0" />
+		<feColorMatrix type="matrix" color-interpolation-filters="sRGB" 
+			values="4.148 -2.86 -0.288 0 0 -0.852 2.19 -0.288 0 0 -0.852 -2.86 4.712000000000001 0 0 0 0 0 1 0" />
+		<feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="175" />
+	</filter>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 9.1247 34.6638)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 10.1674 431.2953)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 9.1674 827.9427)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 9.1674 1224.214)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 9.1674 1620.5341)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 2973.2883 36.3311)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 2973.2883 431.6167)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 2973.2883 829.9427)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 2973.2883 1224.2485)"></image>
+	<image id="29484" class="dropzone" width="2793" height="805" xlink:href="pics/parts/29484001PO_P1.png" transform="matrix(0.48 0 0 0.48 2973.2883 1620.7042)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1365.6204 11.129)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1436.6576 11.129)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1436.6576 409.0294)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1364.2783 409.0294)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1364.2783 803.1188)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1437.0608 803.1188)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1438.0608 1197.7296)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1364.2826 1197.7296)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1364.2826 1596.5173)"></image>
+	<image id="M72150166-3" class="dropzone" width="131" height="804" xlink:href="pics/parts/29484001PO_P2.png" transform="matrix(0.48 0 0 0.48 1438.0608 1596.5173)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 1511.6656 29.8933)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 1511.6656 319.0799)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 1511.6656 607.2293)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 1511.6656 894.7825)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 1511.6656 1183.7788)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 1511.6656 1473.9291)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 1511.6656 1760.8295)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 2242.1213 29.8933)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 2242.1213 319.0799)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 2242.1213 607.2293)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 2242.1213 894.7825)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 2242.1213 1183.7788)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 2242.1213 1473.9291)"></image>
+	<image id="F2227S2029-TU6" class="dropzone" width="1501" height="580" xlink:href="pics/parts/29484001PO_P3.png" transform="matrix(0.48 0 0 0.48 2242.1213 1760.8295)"></image>
+</svg>

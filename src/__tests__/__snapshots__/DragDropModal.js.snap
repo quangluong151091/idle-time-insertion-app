@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DragDropModal should render correctly 1`] = `
+<div>
+  <Modal
+    animation={true}
+    autoFocus={true}
+    backdrop={true}
+    bsClass="modal"
+    dialogComponentClass={[Function]}
+    enforceFocus={true}
+    keyboard={true}
+    manager={
+      ModalManager {
+        "add": [Function],
+        "containers": Array [],
+        "data": Array [],
+        "handleContainerOverflow": true,
+        "hideSiblingNodes": true,
+        "isTopModal": [Function],
+        "modals": Array [],
+        "remove": [Function],
+      }
+    }
+    onHide={[Function]}
+    renderBackdrop={[Function]}
+    restoreFocus={true}
+    show={false}
+  >
+    <ModalHeader
+      bsClass="modal-header"
+      closeButton={true}
+      closeLabel="Close"
+    >
+      <ModalTitle
+        bsClass="modal-title"
+        componentClass="h4"
+      >
+        <img
+          alt="note"
+          src="../../../img\\\\/note.png"
+        />
+         Create new note
+      </ModalTitle>
+    </ModalHeader>
+    <ModalBody
+      bsClass="modal-body"
+      componentClass="div"
+    >
+      <div
+        className="panel panel-default"
+      >
+        <div
+          className="panel-body"
+        >
+          <span
+            className="font-weight-bold"
+          >
+            <b>
+              Time of error: 
+            </b>
+          </span>
+          <DatePicker
+            allowSameDay={false}
+            dateFormat="dd/MM/yyyy HH:mm"
+            dateFormatCalendar="LLLL yyyy"
+            disabled={false}
+            disabledKeyboardNavigation={false}
+            dropdownMode="scroll"
+            monthsShown={1}
+            nextMonthButtonLabel="Next month"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClickOutside={[Function]}
+            onFocus={[Function]}
+            onInputClick={[Function]}
+            onInputError={[Function]}
+            onKeyDown={[Function]}
+            onMonthChange={[Function]}
+            onSelect={[Function]}
+            onYearChange={[Function]}
+            preventOpenOnFocus={false}
+            previousMonthButtonLabel="Previous Month"
+            readOnly={false}
+            renderDayContents={[Function]}
+            selected={2018-12-12T08:00:00.000Z}
+            shouldCloseOnSelect={true}
+            showTimeSelect={true}
+            timeCaption="time"
+            timeFormat="HH:mm"
+            timeIntervals={1}
+            withPortal={false}
+          />
+        </div>
+      </div>
+      <div
+        id="detail"
+      >
+        <span
+          className="font-weight-bold"
+        >
+          Additional description: 
+        </span>
+        <textarea
+          className="cw-modal-text-area"
+          onChange={[Function]}
+        />
+      </div>
+    </ModalBody>
+    <ModalFooter
+      bsClass="modal-footer"
+      componentClass="div"
+    >
+      <Button
+        id="cancel"
+        look="default"
+        onClick={[Function]}
+        primary={false}
+        selected={false}
+        togglable={false}
+      >
+        Cancel
+      </Button>
+      <Button
+        id="submit"
+        look="default"
+        onClick={[Function]}
+        primary={true}
+        selected={false}
+        togglable={false}
+      >
+        Submit
+      </Button>
+    </ModalFooter>
+  </Modal>
+</div>
+`;
